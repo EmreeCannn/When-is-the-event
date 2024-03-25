@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>When Is The Event ?</title>
+</head>
+<body>
+    <div class="container">
+        <div class="remaining_div">
+            <!--buna hidden verdiğim için tüm çocukları etkilemiş oldu -->
+           <h1>When Is The Event ?</h1>
+           <form id="form">
+               <label>Choose a date</label>
+               <input type="date" name="date" id="date" min="" required >
+               <!-- benim ileri bir tarih seçmem lazım ancak burda geçmiş bir tarih de seçebiliyorum
+            bunu engellemek için  min özelliğimi kullanıcam  -->
+               <button>Calculate</button>
+           </form>
+        </div>
+        <div class="time_Div" id="time_Div" hidden>
+            <h1>Remaining Time</h1>
+            <ul>
+                <li><span>1</span>Day</li>
+                <li><span>2</span>Hour</li>
+                <li><span>3</span>Minute</li>
+                <li><span>4</span>Second</li>
+            </ul>
+            <button id="reset_button">Clear</button>
+        </div>
+        <div class="time_has_come" hidden>
+            <h1>Time Has Come  !!!!</h1>
+            <button id="complete_button">Calculate Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
